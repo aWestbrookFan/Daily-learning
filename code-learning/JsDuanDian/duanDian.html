@@ -26,201 +26,199 @@
 </body>
 <script>
 
-    // document.querySelector('.dj').onclick = function () {
-    //     console.log("111");
-    // }
-    //
-    // function dDFunction() {
-    //     let variable = 111;
-    //     let variable1 = "222";
-    //     dDFunction1(variable + variable1);
-    // }
-    //
-    // function dDFunction1(a) {
-    //     let variable = 111;
-    //     let variable1 = "222";
-    //     console.log(a + variable + variable1);
-    // }
-    //
-    // dDFunction();
-    //
-    //
-    // class Observe {
-    //     constructor(name, age) {
-    //         this.name = name;
-    //         this.age = age;
-    //     }
-    // }
-    //
-    // let a = new Observe("sww", 12);
+    document.querySelector('.dj').onclick = function () {
+        console.log("111");
+    }
 
-    //     this bind bind创建了一个和调用者同样的函数体和作用域的函数。
-    // var a = 'windows';
-    // function f() {
-    //     return this.a;
-    // }
-    // console.log(f());
-    //
-    // let b = f.bind({a: "111"});
-    // console.log(b());
+    function dDFunction() {
+        let variable = 111;
+        let variable1 = "222";
+        dDFunction1(variable + variable1);
+    }
+
+    function dDFunction1(a) {
+        let variable = 111;
+        let variable1 = "222";
+        console.log(a + variable + variable1);
+    }
+
+    dDFunction();
 
 
-    // function foo() {
-    //     var a = '1';
-    //     this.bar();
-    // }
-    //
-    // function bar() {
-    //     console.log(11);
-    //     console.log(this);
-    // }
-    //
-    // foo();
+    class Observe {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
+
+    let a = new Observe("sww", 12);
+
+        this bind bind创建了一个和调用者同样的函数体和作用域的函数。
+    var a = 'windows';
+    function f() {
+        return this.a;
+    }
+    console.log(f());
+
+    let b = f.bind({a: "111"});
+    console.log(b());
 
 
-    // var name = "sww_windows"
-    // let obj = {
-    //     "name": "sww",
-    //     'fn': function () {
-    //         console.log(this.name);
-    //     }
-    // }
-    // obj.fn();
-    // let obj1 = obj.fn;
-    // obj1();
+    function foo() {
+        var a = '1';
+        this.bar();
+    }
 
-    // 原型
-    // let anotherObj = {
-    //     a: 3
-    // }
-    // let obj = Object.create(anotherObj);
-    // console.log(obj.a);
-    // obj.a = 2;
-    // console.log(obj,obj.a);
+    function bar() {
+        console.log(11);
+        console.log(this);
+    }
+
+    foo();
 
 
-    // const promise = new Promise(function (reso, reject) {
-    //     reject();
-    // });
-    // console.log(promise);
+    var name = "sww_windows"
+    let obj = {
+        "name": "sww",
+        'fn': function () {
+            console.log(this.name);
+        }
+    }
+    obj.fn();
+    let obj1 = obj.fn;
+    obj1();
+
+    原型
+    let anotherObj = {
+        a: 3
+    }
+    let obj = Object.create(anotherObj);
+    console.log(obj.a);
+    obj.a = 2;
+    console.log(obj,obj.a);
 
 
-    <!--    function Promise1(a) {-->
-    <!--        console.log(this);-->
-    <!--        this.a = a;-->
-    <!--        console.log(this);-->
-    <!--    }-->
-    <!--    let a = new Promise1(1);-->
-    <!--    console.log(a);-->
+    const promise = new Promise(function (reso, reject) {
+        reject();
+    });
+    console.log(promise);
+    //
+    //
+    // <!--    function Promise1(a) {-->
+    // <!--        console.log(this);-->
+    // <!--        this.a = a;-->
+    // <!--        console.log(this);-->
+    // <!--    }-->
+    // <!--    let a = new Promise1(1);-->
+    // <!--    console.log(a);-->
+    //
+    // <!--    console.log(Object.getPrototypeOf(a) === Promise1.prototype);-->
+    //
+    // //    手写promise 版本
+    // // const a = new Promise(function (resolve1, reject) {
+    // //     setTimeout(function () {
+    // //         resolve1();
+    // //     },2000);
+    // // });
+    // // a.then(function () {
+    // //    console.log(11);
+    // // });
+    // // //要处理的逻辑
+    // // // 1. 构造函数的特征
+    // // // 2. 状态
+    // // // 3. 状态改变之后
+    // // function Promise1() {
+    // //
+    // // }
+    //
+        {
+            function myPromise(constructor) {
+                //js 通过构造函数创建之后 this指向创建的这个对象 对这个对象进行保存 方便后面一系列的原型链能够引用到this。
+                let self = this;
+                self.status = "pending" //定义状态改变前的初始状态
+                self.value = undefined;//定义状态为resolved的时候的状态
+                self.reason = undefined;//定义状态为rejected的时候的状态
 
-    <!--    console.log(Object.getPrototypeOf(a) === Promise1.prototype);-->
+                // 为了异步 采用发布订阅模式 当status状态触发时，分别进行执行
+                // 定义两个数组来分别存放 异步执行的事件。
+                // 用来保存then 方法中，第一个参数
+                self.onResolvedCallbacks = []
+                // 用来保存then 方法中，第二个参数
+                self.onRejectedCallbacks = []
 
-    //    手写promise 版本
-    // const a = new Promise(function (resolve1, reject) {
-    //     setTimeout(function () {
-    //         resolve1();
-    //     },2000);
-    // });
-    // a.then(function () {
-    //    console.log(11);
-    // });
-    // //要处理的逻辑
-    // // 1. 构造函数的特征
-    // // 2. 状态
-    // // 3. 状态改变之后
-    // function Promise1() {
-    //
-    // }
+                function resolve(value) {
+                    console.log(self);
+                    //两个==="pending"，保证了状态的改变是不可逆的
+                    if (self.status === "pending") {
+                        self.value = value;
+                        self.status = "resolved";
+                        self.onResolvedCallbacks.forEach(v => {
+                            v();
+                        })
+                    }
+                }
 
-    //     {
-    //         function myPromise(constructor) {
-    //             //js 通过构造函数创建之后 this指向创建的这个对象 对这个对象进行保存 方便后面一系列的原型链能够引用到this。
-    //             let self = this;
-    //             self.status = "pending" //定义状态改变前的初始状态
-    //             self.value = undefined;//定义状态为resolved的时候的状态
-    //             self.reason = undefined;//定义状态为rejected的时候的状态
-    //
-    //             // 为了异步 采用发布订阅模式 当status状态触发时，分别进行执行
-    //             // 定义两个数组来分别存放 异步执行的事件。
-    //             // 用来保存then 方法中，第一个参数
-    //             self.onResolvedCallbacks = []
-    //             // 用来保存then 方法中，第二个参数
-    //             self.onRejectedCallbacks = []
-    //
-    //             function resolve(value) {
-    //                 console.log(self);
-    //                 //两个==="pending"，保证了状态的改变是不可逆的
-    //                 if (self.status === "pending") {
-    //                     self.value = value;
-    //                     self.status = "resolved";
-    //                     self.onResolvedCallbacks.forEach(v => {
-    //                         v();
-    //                     })
-    //                 }
-    //             }
-    //
-    //             function reject(reason) {
-    //                 //两个==="pending"，保证了状态的改变是不可逆的
-    //                 if (self.status === "pending") {
-    //                     self.reason = reason;
-    //                     self.status = "rejected";
-    //                 }
-    //             }
-    //
-    //             //捕获构造异常
-    //             try {
-    //                 constructor(resolve, reject);
-    //             } catch (e) {
-    //                 reject(e);
-    //             }
-    //         }
-    //
-    // // 定义链式调用的then方法
-    //         myPromise.prototype.then = function (onFullfilled, onRejected) {
-    //             let self = this;
-    //             // 异步执行。
-    //             if (self.status === "pending") {
-    //                 self.onResolvedCallbacks.push(onFullfilled);
-    //                 self.onRejectedCallbacks.push(onRejected);
-    //             }
-    //
-    //         }
-    //
-    //         const a = new myPromise(function (resolve, reject) {
-    //             setTimeout(function () {
-    //                 resolve();
-    //             }, 1000);
-    //         })
-    //
-    //         a.then(function () {
-    //             console.log("myPromise");
-    //         })
-    //     }
-    //
-    //     function debounce(fn, wait) {
-    //         var timer = null;
-    //         return function () {
-    //             var context = this
-    //             var args = arguments
-    //             if (timer) {
-    //                 clearTimeout(timer);
-    //                 timer = null;
-    //             }
-    //             timer = setTimeout(function () {
-    //                 fn.apply(context, args)
-    //             }, wait)
-    //         }
-    //     }
-    //
-    //     var fn = function () {
-    //         console.log('boom')
-    //     }
-    //
-    //     setInterval(debounce(fn,500),1000) // 第一次在1500ms后触发，之后每1000ms触发一次
-    //
-    //     setInterval(debounce(fn,2000),1000) // 不会触发一次（我把函数防抖看出技能读条，如果读条没完成就用技能，便会失败而且重新读条）
+                function reject(reason) {
+                    //两个==="pending"，保证了状态的改变是不可逆的
+                    if (self.status === "pending") {
+                        self.reason = reason;
+                        self.status = "rejected";
+                    }
+                }
 
+                //捕获构造异常
+                try {
+                    constructor(resolve, reject);
+                } catch (e) {
+                    reject(e);
+                }
+            }
 
+    // 定义链式调用的then方法
+            myPromise.prototype.then = function (onFullfilled, onRejected) {
+                let self = this;
+                // 异步执行。
+                if (self.status === "pending") {
+                    self.onResolvedCallbacks.push(onFullfilled);
+                    self.onRejectedCallbacks.push(onRejected);
+                }
+
+            }
+
+            const a = new myPromise(function (resolve, reject) {
+                setTimeout(function () {
+                    resolve();
+                }, 1000);
+            })
+
+            a.then(function () {
+                console.log("myPromise");
+            })
+        }
+
+    // //     function debounce(fn, wait) {
+    // //         var timer = null;
+    // //         return function () {
+    // //             var context = this
+    // //             var args = arguments
+    // //             if (timer) {
+    // //                 clearTimeout(timer);
+    // //                 timer = null;
+    // //             }
+    // //             timer = setTimeout(function () {
+    // //                 fn.apply(context, args)
+    // //             }, wait)
+    // //         }
+    // //     }
+    // //
+    // //     var fn = function () {
+    // //         console.log('boom')
+    // //     }
+    // //
+    // //     setInterval(debounce(fn,500),1000) // 第一次在1500ms后触发，之后每1000ms触发一次
+    // //
+    // //     setInterval(debounce(fn,2000),1000) // 不会触发一次（我把函数防抖看出技能读条，如果读条没完成就用技能，便会失败而且重新读条）
     {
         var f = {
             a: 'f',
