@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d1a3bff-7b06-4f4f-be7f-51acf6fe0f5d" name="Default Changelist" comment="" />
+    <list default="true" id="f2f61e80-8ced-42d4-ae0b-259a6fea7aa3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../WebstormProjects/leetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebstormProjects/leetcode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JsDuanDian/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JsDuanDian/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,23 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/duanDian.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-659">
-              <caret line="133" column="6" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="133" selection-end-column="6" />
-              <folding>
-                <element signature="e#5943#6428#0" />
-                <element signature="e#6435#6620#0" />
-                <element signature="e#6626#6861#0" />
-              </folding>
+            <state relative-caret-position="1365">
+              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -40,7 +34,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/duanDian.html" />
+        <option value="$PROJECT_DIR$/leetcode.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/leetcode.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
@@ -61,8 +65,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="JsDuanDian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JsDuanDian" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -71,7 +75,6 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -89,29 +92,40 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="leetcode.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="leetcode.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.leetcode.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d1a3bff-7b06-4f4f-be7f-51acf6fe0f5d" name="Default Changelist" comment="" />
-      <created>1594122198572</created>
+      <changelist id="f2f61e80-8ced-42d4-ae0b-259a6fea7aa3" name="Default Changelist" comment="" />
+      <created>1594125181589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594122198572</updated>
-      <workItem from="1594122199705" duration="699000" />
+      <updated>1594125181589</updated>
+      <workItem from="1594125182692" duration="960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="699000" />
+    <option name="totallyTimeSpent" value="960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="846" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15719947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -119,7 +133,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.042134833" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -133,20 +147,12 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/duanDian.html">
+    <entry file="file://$PROJECT_DIR$/leetcode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-659">
-          <caret line="133" column="6" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="133" selection-end-column="6" />
-          <folding>
-            <element signature="e#5943#6428#0" />
-            <element signature="e#6435#6620#0" />
-            <element signature="e#6626#6861#0" />
-          </folding>
+        <state relative-caret-position="1365">
+          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
