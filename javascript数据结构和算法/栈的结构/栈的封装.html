@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>栈的封装 / 应用实例之10进制转2进制</title>
+  </head>
+  <body></body>
+  <script>
+    //   用数组来实现栈的数据结构
+    //   申明一下栈类
+    /*
+    push（element）：添加一个新元素到栈顶位置；
+    pop（）：移除栈顶的元素，同时返回被移除的元素；
+    peek（）：返回栈顶的元素，不对栈做任何修改（该方法不会移除栈顶的元素，仅仅返回它）；
+    isEmpty（）：如果栈里没有任何元素就返回true，否则返回false；
+    size（）：返回栈里的元素个数。这个方法和数组的length属性类似；
+    toString（）：将栈结构的内容以字符串的形式返回。
+    */
+    function Stack() {
+      //  栈的相关操作
+      this.item = [];
+      this.push = (item) => {
+        this.item.push(item);
+      };
+      this.pop = (item) => {
+        return this.item.pop();
+      };
+
+      this.peek = () => {
+        return this.item[this.item.length - 1];
+      };
+
+      this.isEmpty = () => {
+        if (!this.item.length) {
+          return true;
+        }
+        return false;
+      };
+
+      this.size = () => {
+        return this.item.length;
+      };
+
+      this.toString = () => {
+        let resultString = "";
+        for (let i of this.item) {
+          resultString += i + " ";
+        }
+        return resultString;
+      };
+    }
+
+    // 栈的使用
+    let s = new Stack();
+    s.push(20);
+    s.push(10);
+    s.push(100);
+    s.push(77);
+
+    //   10进制转二进制
+    /* 
+      decNumber
+    */
+    function dec2bin(decNumber) {
+      if (typeof decNumber !== "number") {
+        return "请输入数字";
+      }
+      let stack = new Stack();
+      let binString = "";
+      while (decNumber > 0) {
+        stack.push(decNumber % 2);
+        decNumber = Math.floor(decNumber / 2);
+      }
+      while (!stack.isEmpty()) {
+        binString += stack.pop();
+      }
+      return +binString;
+    }
+    console.log(dec2bin("100"));
+  </script>
+</html>

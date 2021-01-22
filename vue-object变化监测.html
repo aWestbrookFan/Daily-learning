@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:  0 0;
+            padding: 0 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body{
+            background-color: rgba(0, 90, 98, 0.2);
+        }
+        .code {
+            width: 100%;
+            height: 100%;
+            color: #011397;
+            overflow-y: auto;
+            padding: 2px;
+        }
+
+        /*chrome滚动条颜色设置*/
+        *::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+            background-color: transparent;
+        }
+        /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+        *::-webkit-scrollbar-track {
+            background-color: #f0f6ff;
+        }
+        /*定义滚动条轨道 内阴影+圆角*/
+        *::-webkit-scrollbar-thumb {
+            background-color: #605CA8;
+            border-radius: 5px;
+        }
+
+        /*定义滑块 内阴影+圆角*/
+        .scrollbarHide::-webkit-scrollbar {
+            display: none
+        }
+        .scrollbarShow::-webkit-scrollbar {
+            display: block
+        }
+
+    </style>
+
+</head>
+<body>
+<!--  code 编码  -->
+<div style="width: 100%;height: 100%; padding:20px 20%;box-sizing: border-box">
+    <div class="code" contenteditable="true" ></div>
+</div>
+
+</body>
+
+<script id="script1">
+
+    // console.log(11);
+    // let car = {};
+    // let val = 3000;
+    // Object.defineProperty(car, "price", {
+    //     enumerable: true,
+    //     configurable: true,
+    //     get: function () {
+    //         return val;
+    //     },
+    //     set: function (new_val) {
+    //         val = new_val;
+    //     },
+    // });
+
+
+    /**
+     * Observer类会通过递归的方式把一个对象的所有属性都转化成可观测对象
+     */
+    class Observer {
+        constructor(value) {
+            this.value = value
+            // 给value新增一个__ob__属性，值为该value的Observer实例
+            // 相当于为value打上标记，表示它已经被转化成响应式了，避免重复操作
+            // def(value, '__ob__', this);
+
+            if (Array.isArray(value)) {
+                // 当value为数组时的逻辑
+                // ...
+            } else {
+                this.walk(value)
+            }
+        }
+
+        walk(obj) {
+            const keys = Object.keys(obj)
+            for (let i = 0; i < keys.length; i++) {
+                defineReactive(obj, keys[i])
+            }
+        }
+    }
+
+    /**
+     * 使一个对象转化成可观测对象
+     * @param { Object } obj 对象
+     * @param { String } key 对象的key
+     * @param { Any } val 对象的某个key的值
+     */
+
+    function defineReactive(obj, key, val) {
+        // 如果只传了obj和key，那么val = obj[key]
+        if (arguments.length === 2) {
+            val = obj[key]
+        }
+        if (typeof val === 'object') {
+            new Observer(val)
+        }
+        Object.defineProperty(obj, key, {
+            enumerable: true,
+            configurable: true,
+            get() {
+                console.log(`${key}属性被读取`);
+                return val;
+            },
+            set(newVal) {
+                if (val === newVal) {
+                    return;
+                }
+                val = newVal;
+
+                let console_val = `${key}属性被修改了`;
+                console.log(console_val);
+            }
+        })
+    }
+
+
+    let car = new Observer({
+        'brand': 'BMW',
+        'price': 3000
+    })
+</script>
+
+<script>
+    document.querySelector('.code').innerText = document.querySelector('#script1').textContent.trim();
+
+
+    var name = 'global';
+    let obj = {
+        name: 'sww',
+        fn: function () {
+            console.log(this.name)
+        }.bind(window)
+    };
+
+    // console.log(new obj.fn);
+    let obj1 = new obj.fn('123');
+    console.log(obj1);
+</script>
+
+</html>
+
+

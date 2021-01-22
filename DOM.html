@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        * {
+            padding: 0 0;
+            margin: 0 0;
+        }
+
+        .container, .switch {
+            color: #ff9900;
+            padding: 5%;
+        }
+
+        .main {
+            width: 200px;
+            height: 200px;
+            background-color: #061b3e;
+            cursor: pointer;
+        }
+
+        .position_fixed {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 200px;
+            height: 200px;
+            background-color: #7e79d9;
+        }
+
+        .switch {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #6e4100;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    container
+    <div class="main">
+        main
+        <div class="position_fixed">
+            position_fixed
+        </div>
+    </div>
+</div>
+
+
+<div class="switch">
+    切换是否冒泡
+</div>
+
+</body>
+</html>
+
+<script>
+    (function () {
+        let status = 0;
+        /*
+           *  跟着dom树的，跟 css的位置无关
+           * */
+        document.querySelector('.container').addEventListener('click', function (e) {
+            console.log('container');
+        },false);
+        document.querySelector('.main').onclick = function (e) {
+            console.log('main');
+        };
+        document.querySelector('.position_fixed').onclick = function (e) {
+            if (!status) {
+                console.log('position_fixed （默认冒泡状态）');
+                return;
+            }
+            console.log('position_fixed （阻止默认冒泡状态）');
+            e.stopPropagation();
+        };
+        document.querySelector('.switch').onclick = function (e) {
+            status = 1;
+            e.stopPropagation();
+        };
+
+
+        // let obj = document.querySelector('.switch');
+        //
+        // // 创建并分发事件
+        // var event = new CustomEvent("cat", {"detail": {"hazcheeseburger": true}})
+        //
+        // // 添加一个适当的事件监听器
+        // obj.addEventListener("cat", function (e) {
+        //     console.log(e);
+        //     // process(e.detail)
+        // });
+        //
+        // obj.dispatchEvent(event);
+    })()
+</script>

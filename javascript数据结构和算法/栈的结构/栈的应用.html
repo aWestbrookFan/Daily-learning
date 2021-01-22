@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>栈的应用 - 10进制转2进制</title>
+  </head>
+  <body></body>
+  <script>
+    //   栈的代码实现
+    function Stack() {
+      //  栈的相关操作
+      this.item = [];
+      this.push = (item) => {
+        this.item.push(item);
+      };
+      this.pop = (item) => {
+        return this.item.pop();
+      };
+
+      this.peek = () => {
+        return this.item[this.item.length - 1];
+      };
+
+      this.isEmpty = () => {
+        if (!this.item.length) {
+          return true;
+        }
+        return false;
+      };
+
+      this.size = () => {
+        return this.item.length;
+      };
+
+      this.toString = () => {
+        let resultString = "";
+        for (let i of this.item) {
+          resultString += i + " ";
+        }
+        return resultString;
+      };
+    }
+  </script>
+</html>
