@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var name = 'window'
+    var applyName = {
+        name: 'inner'
+    }
+    Function.prototype.myApply = function (context) {
+        context = context ? Object(context) : window
+        context.fn = this
+        let args = Array.from(arguments.slice(1))
+        let result = context.fn(args)
+        delete context.fn
+        return result
+    }
+
+</script>
+</html>

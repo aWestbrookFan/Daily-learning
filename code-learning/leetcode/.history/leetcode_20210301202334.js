@@ -37,7 +37,9 @@ var lengthOfLongestSubstring = function (s) {
     return max_length;
 };
 
-// let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~" 
+// let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~" +
+bcdefghijklmnopqrstuvwxyzABCD"
+//
 
 // console.log(lengthOfLongestSubstring(str));
 

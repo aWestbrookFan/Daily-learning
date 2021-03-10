@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #test {
+            animation: test 1s;
+        }
+
+        @keyframes test {
+            0% {
+                margin: 0;
+            }
+            100% {
+                margin: 500px;
+            }
+        }
+    </style>
+
+
+</head>
+<body style="min-height: 220vh">
+<button id="test"></button>
+
+</body>
+<script>
+    /*防抖节流*/
+    function debounce(fn, delay) {
+        let timer = null
+        return function (context) {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                fn.call(this, context)
+            }, delay);
+        }
+    }
+
+    function test() {
+        console.log(1);
+    }
+
+    document.querySelector("#test").addEventListener('click', debounce(test, 2000));
+
+
+    // 节流 throttle  在单位时间内只能触发一次函数  如果这个单位时间内触发多次函数 则执行一次
+    function throttle(fn, delay) {
+        let flag = true
+        return function () {
+            if (!flag) {
+                return
+            }
+            flag = false
+            setTimeout(() => {
+                fn.call(this)
+                flag = true
+            }, delay)
+        }
+    }
+
+    window.addEventListener('scroll', throttle(test, 2000))
+
+
+</script>
+</html>

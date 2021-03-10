@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var name = 'window'
+    var callName = {
+        name: 'inner'
+    }
+    Function.prototype.myCall = function (context) {
+        context = context ? context : window
+        context.fn = this
+        let args = Array.from(arguments).slice(1)
+        let result = context.fn(...args)
+        delete context.fn
+        return result
+    }
+    function callTest(arg1, arg2) {
+        console.log(this.name);
+        console.log(arg1, arg2)
+        return 3
+    }
+
+    console.log(callTest(1, 2));
+    console.log(callTest.call(callName, 1, 2));
+    console.log(callTest.myCall(callName, 1, 2));
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>单向链表</title>
+  </head>
+  <body>
+    <h1>单向链表</h1>
+  </body>
+
+  <script>
+    /* 
+        append（element）：向链表尾部添加一个新的项；
+        insert（position，element）：向链表的特定位置插入一个新的项；
+        get（position）：获取对应位置的元素；
+        indexOf（element）：返回元素在链表中的索引。如果链表中没有该元素就返回-1；
+        update（position，element）：修改某个位置的元素；
+        removeAt（position）：从链表的特定位置移除一项；
+        remove（element）：从链表中移除一项；
+        isEmpty（）：如果链表中不包含任何元素，返回trun，如果链表长度大于0则返回false；
+        size（）：返回链表包含的元素个数，与数组的length属性类似；
+        toString（）：由于链表项使用了Node类，就需要重写继承自JavaScript对象默认的toString方法，让其只输出元素的值；
+     */
+
+    function LinkedList() {
+      // 该linkedList 类具有Node节点操作（额外的一个类 属性为数据/下一个节点的指向）头部 长度
+      function Node(data, next) {
+        this.data = data;
+        this.next = next;
+      }
+      this.head = null;
+      this.length = 0;
+
+      // 开始添加一些类的方法 加入节点
+      this.append = (element) => {
+        
+      };
+    }
+  </script>
+</html>
