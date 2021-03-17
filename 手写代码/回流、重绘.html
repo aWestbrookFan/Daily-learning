@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+        .father {
+            height: 300px;
+            background-color: #7e79d9;
+            visibility: hidden;
+            /*opacity: 0;*/
+        }
+        .son {
+            height: 100px;
+            visibility: visible;
+            background-color: #ae09a9;
+        }
+
+        .anotherFather {
+            height: 300px;
+            background-color: #be0851;
+        }
+    </style>
+</head>
+<body></body>
+<script>
+    "use strict";
+
+    function aa(){
+        console.log(this)
+    }
+    aa();
+
+    document.querySelector('.father').addEventListener('click', () => {
+        console.log(11)
+    })
+</script>
+
+</html>

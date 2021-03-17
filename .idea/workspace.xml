@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a196b63-c643-44d4-98f5-1d8a8f5874ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/手写代码/apply/apply.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/call/call.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/deepclone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/instaceof.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/事件循环.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/函数柯里化.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/扁平化数组.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/数组扁平化.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/深克隆.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/链式调用.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/防抖节流.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/防抖节流.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/合并二维数组组成一堆有序数组....js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/斐波拉契.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/求和....js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手写代码/createAcounterObject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手写代码/proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手写代码/回流、重绘.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手写代码/正则表达式.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手写代码/迭代.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-learning/leetcode/leetcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/code-learning/leetcode/leetcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/手写代码/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/手写代码/new.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -118,19 +108,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/googleDownload/JavaScript30-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.函数柯里化.js">
-    <configuration name="求和....js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/算法/求和....js" working-dir="$PROJECT_DIR$/算法">
-      <method v="2" />
-    </configuration>
-    <configuration name="合并二维数组组成一堆有序数组....js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/算法/合并二维数组组成一堆有序数组....js" working-dir="$PROJECT_DIR$/算法">
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Daily learning" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.proxy.js">
     <configuration name="函数柯里化.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/函数柯里化.js" working-dir="$PROJECT_DIR$/手写代码">
+      <method v="2" />
+    </configuration>
+    <configuration name="正则表达式.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/正则表达式.js" working-dir="$PROJECT_DIR$/手写代码">
       <method v="2" />
     </configuration>
     <configuration name="数组扁平化.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/数组扁平化.js" working-dir="$PROJECT_DIR$/手写代码">
@@ -139,18 +132,25 @@
     <configuration name="链式调用.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/链式调用.js" working-dir="$PROJECT_DIR$/手写代码">
       <method v="2" />
     </configuration>
-    <configuration name="apply.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/call/apply.js" working-dir="$PROJECT_DIR$/手写代码/call">
+    <configuration name="createAcounterObject.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/createAcounterObject.js" working-dir="$PROJECT_DIR$/手写代码">
       <method v="2" />
     </configuration>
     <configuration name="instaceof.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/instaceof.js" working-dir="$PROJECT_DIR$/手写代码">
       <method v="2" />
     </configuration>
+    <configuration name="new.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/new.js" working-dir="$PROJECT_DIR$/手写代码">
+      <method v="2" />
+    </configuration>
+    <configuration name="proxy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/手写代码/proxy.js" working-dir="$PROJECT_DIR$/手写代码">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.proxy.js" />
+        <item itemvalue="Node.js.createAcounterObject.js" />
+        <item itemvalue="Node.js.new.js" />
         <item itemvalue="Node.js.函数柯里化.js" />
         <item itemvalue="Node.js.instaceof.js" />
-        <item itemvalue="Node.js.apply.js" />
-        <item itemvalue="Node.js.求和....js" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +176,12 @@
       <workItem from="1614943937451" duration="27247000" />
       <workItem from="1615254820594" duration="4204000" />
       <workItem from="1615343931155" duration="2389000" />
+      <workItem from="1615360717685" duration="6975000" />
+      <workItem from="1615696517766" duration="219000" />
+      <workItem from="1615697095085" duration="5566000" />
+      <workItem from="1615721465754" duration="1353000" />
+      <workItem from="1615812333370" duration="517000" />
+      <workItem from="1615870825323" duration="2639000" />
     </task>
     <servers />
   </component>
@@ -214,31 +220,6 @@
           <url>file://$PROJECT_DIR$/手写代码/链式调用.js</url>
           <line>14</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/手写代码/instaceof.js</url>
-          <line>9</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/手写代码/instaceof.js</url>
-          <line>10</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/手写代码/instaceof.js</url>
-          <line>12</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/手写代码/instaceof.js</url>
-          <line>13</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/手写代码/instaceof.js</url>
-          <line>16</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
