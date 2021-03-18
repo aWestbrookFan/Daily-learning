@@ -47,25 +47,13 @@
         this.length += 1;
       };
 
-      this.insert = (position,element) =>{
-         
-      }
       this.toString = () => {
-        let current = this.head;
-        let listString = "";
-        while (current) {
-          listString += current.data + "";
-          current = current.next;
-        }
-        return listString;
-      };
+        let current = this.head
+        let listString = ""
+         while(current){
+           listString +=cu
 
-      this.size = () => {
-        return this.length;
-      };
-
-      this.isEmpty = () => {
-        return this.length === 0 ? true : false;
+         }
       };
     }
 
@@ -75,9 +63,8 @@
 
     //2.测试append方法
     list.append("aaa");
+    list.append("bbb");
+    list.append("ccc");
     console.log(list);
-    console.log(list.toString());
-    console.log(list.size())
-    console.log(list.isEmpty())
   </script>
 </html>
