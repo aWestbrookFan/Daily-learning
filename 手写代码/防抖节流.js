@@ -46,4 +46,19 @@ function throttle(func, wait) {
 }
 
 
+function sendStatistic() {
+    // 固定的统计域名地址
+    let url =
+        'https://data.game.xiaomi.com/1px.gif?ac=xm_client&client=sales_pic';
+
+    const img = new Image();
+    // eslint-disable-next-line no-multi-assign
+    img.error = img.onload = function _next() {
+     console.log(11)
+    };
+    img.src = url;
+
+}
+
+
 
