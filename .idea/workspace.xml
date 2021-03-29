@@ -4,89 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a196b63-c643-44d4-98f5-1d8a8f5874ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/前端算法/剑指offer/顺时针打印矩阵.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222607.js" beforeDir="false" afterPath="$PROJECT_DIR$/前端算法/剑指offer/跳台阶.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222617.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222621.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222623.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222630.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222718.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222722.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222818.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222822.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222838.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222839.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222840.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222842.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222845.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222848.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222851.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222854.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222859.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222905.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222919.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222923.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222933.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222937.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222940.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222942.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222946.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222952.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317222957.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223001.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223011.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223027.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223030.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223037.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223040.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223041.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223043.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223045.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223050.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223056.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223102.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223106.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223111.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223117.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223123.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223126.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223135.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223141.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223143.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223145.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223149.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223153.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223156.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223252.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223254.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223329.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223407.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223413.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223415.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223426.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223428.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223429.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223514.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223524.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223546.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223548.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223551.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223555.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223557.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223601.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223603.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223605.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223642.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223645.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223649.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223650.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/排序算法_20210317223752.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/深克隆_20210306104325.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.history/手写代码/深克隆_20210317134617.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5a196b63-c643-44d4-98f5-1d8a8f5874ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,6 +148,7 @@
       <workItem from="1616374369423" duration="2441000" />
       <workItem from="1616508382056" duration="5209000" />
       <workItem from="1616589378448" duration="1637000" />
+      <workItem from="1617006057950" duration="299000" />
     </task>
     <servers />
   </component>
