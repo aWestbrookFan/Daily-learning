@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a196b63-c643-44d4-98f5-1d8a8f5874ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bigfrontend/实现Array.prototype.map().js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigfrontend/给一个非空字符串，请返回其中出现频率最高的字符。  如果有多个，则用数组返回全部。.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/EventEmitter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/liandong.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/rem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/手写代码/版本判定.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法/数组元素值的比较.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flexible.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/手写代码/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/手写代码/1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -167,7 +160,10 @@
       <workItem from="1618459735370" duration="21000" />
       <workItem from="1618884384974" duration="4429000" />
       <workItem from="1618901404735" duration="5751000" />
-      <workItem from="1619157956769" duration="2307000" />
+      <workItem from="1619157956769" duration="3501000" />
+      <workItem from="1619185763064" duration="604000" />
+      <workItem from="1619277424972" duration="698000" />
+      <workItem from="1619788591628" duration="2863000" />
     </task>
     <servers />
   </component>
@@ -186,26 +182,26 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="635" y="223" key="FileChooserDialogImpl/0.0.1707.930@0.0.1707.930" timestamp="1617760679403" />
-    <state width="1687" height="224" key="GridCell.Tab.0.bottom" timestamp="1619159590533">
+    <state width="1687" height="224" key="GridCell.Tab.0.bottom" timestamp="1619183085555">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state width="1687" height="202" key="GridCell.Tab.0.bottom/0.0.1707.930/3840.0.1920.1050@0.0.1707.930" timestamp="1616573294988" />
-    <state width="1687" height="224" key="GridCell.Tab.0.bottom/0.0.1707.930@0.0.1707.930" timestamp="1619159590533" />
-    <state width="1687" height="224" key="GridCell.Tab.0.center" timestamp="1619159590533">
+    <state width="1687" height="224" key="GridCell.Tab.0.bottom/0.0.1707.930@0.0.1707.930" timestamp="1619183085555" />
+    <state width="1687" height="224" key="GridCell.Tab.0.center" timestamp="1619183085554">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state width="1687" height="202" key="GridCell.Tab.0.center/0.0.1707.930/3840.0.1920.1050@0.0.1707.930" timestamp="1616573294988" />
-    <state width="1687" height="224" key="GridCell.Tab.0.center/0.0.1707.930@0.0.1707.930" timestamp="1619159590533" />
-    <state width="1687" height="224" key="GridCell.Tab.0.left" timestamp="1619159590533">
+    <state width="1687" height="224" key="GridCell.Tab.0.center/0.0.1707.930@0.0.1707.930" timestamp="1619183085554" />
+    <state width="1687" height="224" key="GridCell.Tab.0.left" timestamp="1619183085554">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state width="1687" height="202" key="GridCell.Tab.0.left/0.0.1707.930/3840.0.1920.1050@0.0.1707.930" timestamp="1616573294988" />
-    <state width="1687" height="224" key="GridCell.Tab.0.left/0.0.1707.930@0.0.1707.930" timestamp="1619159590533" />
-    <state width="1687" height="224" key="GridCell.Tab.0.right" timestamp="1619159590533">
+    <state width="1687" height="224" key="GridCell.Tab.0.left/0.0.1707.930@0.0.1707.930" timestamp="1619183085554" />
+    <state width="1687" height="224" key="GridCell.Tab.0.right" timestamp="1619183085555">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state width="1687" height="202" key="GridCell.Tab.0.right/0.0.1707.930/3840.0.1920.1050@0.0.1707.930" timestamp="1616573294988" />
-    <state width="1687" height="224" key="GridCell.Tab.0.right/0.0.1707.930@0.0.1707.930" timestamp="1619159590533" />
+    <state width="1687" height="224" key="GridCell.Tab.0.right/0.0.1707.930@0.0.1707.930" timestamp="1619183085555" />
     <state width="1687" height="281" key="GridCell.Tab.1.bottom" timestamp="1619009118684">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
